@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Gym</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<style>
+/* css reset  */
+body{
+   margin: 0px; 
+   padding: 0px;
+   background: url('img/img2.jpg');
+ background-size: 180%;
+ color: white;
+ font-family: 'Lato', sans-serif;
+}
+ 
+
+.left{
+/* border: 2px red solid; */
+display: inline-block;
+position: absolute;
+    left: 34px;
+    top: 20px;
+    text-align: center;
+}
+.left img{
+  width: 125px;
+}
+.left div{
+  line-height: 20px;
+  font-size: 21px;
+}
+.mid{
+  /* border: 2px green solid;  */
+  display: block;
+  margin: 38px auto;
+text-align: center;
+width: 44%;
+}
+.right{
+    /* border: 2px yellow solid; */
+    display: inline-block;
+    position: absolute;
+    right: 34px;
+    top: 54px;
+}
+.btn{
+  font-family: 'Lato', sans-serif;
+  margin: 0px 9px;
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+  border: 2px gray solid;
+  cursor: pointer;
+  padding: 4px 14px;
+font-size: 17px;
+}
+.btn:hover{
+  background-color: grey;
+}
+
+.navbaar{
+  display: inline-block; 
+}
+ ul{
+
+}
+ .navbaar li{
+  display: inline-block;  
+  font-size: 18px;
+}
+ .navbaar li a{
+color: white;
+text-decoration: none;
+padding: 20px 13px;
+
+}
+.navbaar li a:hover, .navbaar li a.active{
+  text-decoration: underline;
+  color: gray;
+}
+.container{
+  border: 2px white solid;
+width: 33%;
+margin: 85px 95px;
+padding: 13px;
+border-radius: 33px;
+}
+.container h2{
+  text-align: center;
+}
+.fourms-group input{
+  text-align: center;
+margin: 10px auto;
+width: 390px;
+padding: 4px;
+font-size: 18px;
+border-radius: 10px;
+display: block;
+font-family: 'Lato', sans-serif;
+border: 2px black solid;
+}
+.container button {
+  margin: 18px auto;
+display: block;
+width: 397px;
+}
+</style>
+
+<body>
+   <header class="header">
+    <!-- left box for logo -->
+<div class="left">
+<img src="img/images.jpg" alt="">
+<div>Fitness Gym</div>
+</div>
+<!-- mid box for navbaar -->
+<div class="mid">
+<div class="navbaar">
+    <ul>
+      <li><a href="#" class="active">Home</a></li> 
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Fitness Calculater</a></li>
+      <li><a href="#">Contact Us</a></li>
+
+    </ul>
+</div>
+</div>
+<!-- right box for button  -->
+<div class="right">
+<button class="btn">Call Us Now</button>
+<button class="btn">Email Us</button>
+</div>
+   </header> 
+   <div class="container">
+    <h2>Join the best gym of Manali now</h2>
+    <form action="noaction.php">
+      <div class="fourms-group">
+        <input type="text" placeholder="Enter your Name">
+      </div>
+      <div class="fourms-group">
+        <input type="text" placeholder="Enter your Age">
+      </div>
+      <div class="fourms-group">
+        <input type="text" placeholder="Enter your Gender">
+      </div>
+      <div class="fourms-group">
+        <input type="text" placeholder="Enter your Locality">
+      </div>
+      <div class="fourms-group">
+        <input type="text" placeholder="Enter your Email id">
+      </div>
+      <div class="fourms-group">
+        <input type="text" placeholder="Enter your Phone number">
+      </div>
+      <button class="btn">Submit</button>
+    </form>
+   </div>
+</body>
+</html>
